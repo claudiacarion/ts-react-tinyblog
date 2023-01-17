@@ -8,5 +8,9 @@ export interface PostData {
 }
 
 export interface IBlogProps {
-  data : PostData []
+  data : PostData[]
+}
+
+export interface IPostProps {
+  posts: PostData
 }
