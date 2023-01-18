@@ -1,3 +1,9 @@
 .category {
   text-align: center;
 }
+
+.category:hover {
+  color: #959595;
+  cursor: pointer;
+  text-transform: uppercase;
+}

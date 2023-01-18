@@ -5,7 +5,7 @@ import '../styles/blog.css';
 
 const Blog = ({ data }: IBlogProps) => (
   <main className='blog-section'>
-    <section className='crime-section'>
+    <section className='category-section'>
       <h3 className='category'>crime</h3>
         {data.map(posts => {
           const { tags } = posts;
@@ -17,7 +17,7 @@ const Blog = ({ data }: IBlogProps) => (
           return null;
         })}
     </section>
-    <section className='english-section'>
+    <section className='category-section'>
     <h3 className='category'>english</h3>
         {data.map(posts => {
           const { tags } = posts;
@@ -29,7 +29,7 @@ const Blog = ({ data }: IBlogProps) => (
           return null;
         })}
     </section>
-    <section className='love-section'>
+    <section className='category-section'>
     <h3 className='category'>love</h3>
         {data.map(posts => {
           const { tags } = posts;
@@ -41,7 +41,7 @@ const Blog = ({ data }: IBlogProps) => (
           return null;
         })}
     </section>
-    <section className='magical-section'>
+    <section className='category-section'>
     <h3 className='category'>magical</h3>
         {data.map(posts => {
           const { tags } = posts;
@@ -53,7 +53,7 @@ const Blog = ({ data }: IBlogProps) => (
           return null;
         })}
     </section>
-    <section className='mystery-section'>
+    <section className='category-section'>
     <h3 className='category'>mystery</h3>
         {data.map(posts => {
           const { tags } = posts;
