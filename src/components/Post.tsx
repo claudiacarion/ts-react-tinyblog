@@ -4,10 +4,10 @@ import '../styles/post.css';
 
 const Post = ({ posts }: IPostProps) => (
   <section className='post-section'>
-    <h1 className='post-title'>{posts.title}</h1>
+    <h4 className='post-title'>{posts.title}</h4>
     <p className='post-body'>{posts.body}</p>
         {posts.tags.map((tag, i) => (
-            <ul key={i}>{tag}</ul>
+            <ul className='post-tags' key={i}>#{tag}</ul>
         ))}
   </section>
 );

@@ -1,11 +1,12 @@
 import React from 'react';
 import { IBlogProps } from '../types/types';
 import Post from './Post';
+import '../styles/blog.css';
 
 const Blog = ({ data }: IBlogProps) => (
   <main className='blog-section'>
     <section className='crime-section'>
-      <h3>crime</h3>
+      <h3 className='category'>crime</h3>
         {data.map(posts => {
           const { tags } = posts;
           if (tags.includes('crime')) {
@@ -17,7 +18,7 @@ const Blog = ({ data }: IBlogProps) => (
         })}
     </section>
     <section className='english-section'>
-    <h3>english</h3>
+    <h3 className='category'>english</h3>
         {data.map(posts => {
           const { tags } = posts;
           if (tags.includes('english')) {
@@ -29,7 +30,7 @@ const Blog = ({ data }: IBlogProps) => (
         })}
     </section>
     <section className='love-section'>
-    <h3>love</h3>
+    <h3 className='category'>love</h3>
         {data.map(posts => {
           const { tags } = posts;
           if (tags.includes('love')) {
@@ -41,7 +42,7 @@ const Blog = ({ data }: IBlogProps) => (
         })}
     </section>
     <section className='magical-section'>
-    <h3>magical</h3>
+    <h3 className='category'>magical</h3>
         {data.map(posts => {
           const { tags } = posts;
           if (tags.includes('magical')) {
@@ -53,7 +54,7 @@ const Blog = ({ data }: IBlogProps) => (
         })}
     </section>
     <section className='mystery-section'>
-    <h3>mystery</h3>
+    <h3 className='category'>mystery</h3>
         {data.map(posts => {
           const { tags } = posts;
           if (tags.includes('mystery')) {

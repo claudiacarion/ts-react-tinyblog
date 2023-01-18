@@ -4,5 +4,22 @@
 }
 
 .post-section {
-  border: solid 1px black;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  background-color: rgb(238, 238, 238);
+}
+
+.post-title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.post-body {
+  padding-left: 15px;
+  padding-right: 15px;
 }
