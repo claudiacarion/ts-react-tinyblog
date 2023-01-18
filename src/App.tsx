@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import Blog from './components/Post';
+import Blog from './components/Blog';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { PostData } from './types/types';
