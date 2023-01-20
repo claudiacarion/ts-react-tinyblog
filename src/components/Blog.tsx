@@ -14,15 +14,17 @@ const Blog = ({ data }: IBlogProps) => {
   <main className='blog-section'>
     <section className='category-section'>
       <h3 onClick={ toggleClass } className='category'>crime</h3>
-        {data.map(posts => {
-          const { tags } = posts;
-          if (tags.includes('crime')) {
-            return <div className={section ? 'show-crime' : 'hide'}>
+        {data
+          // .filter(posts => posts.tags?.includes('crime'))
+          .map(posts => {
+            const { tags } = posts;
+            if (tags.includes('crime')) {
+              return <div className={section ? 'show-crime' : 'hide'}>
               <Post posts={posts} />
             </div>;
-          }
-          return null;
-        })}
+            }
+            return null;
+          })}
     </section>
     <section className='category-section'>
     <h3 onClick={ toggleClass } className='category'>english</h3>
